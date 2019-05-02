@@ -1,341 +1,346 @@
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <title>Site para nota</title>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <title>Site para nota</title>
 
-        <!--ATENÇÃO AAAAAAAAAAAAAAAAA
-        LINK PARA TEMA BASE: BOOTSTRAP "COMPANY":https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp
-        LINK PARA O TEMA DE AUXILIO/REFERENCIA: https://www.logoshope.org/-->
-
-
-        <!--BOOTSTRAP CND-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-         <!--LINK PRA FONTE DE LETRA-->
-         <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
+          <!--ATENÇÃO AAAAAAAAAAAAAAAAA
+          LINK PARA TEMA BASE: BOOTSTRAP "COMPANY":https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp
+          LINK PARA O TEMA DE AUXILIO/REFERENCIA: https://www.logoshope.org/-->
 
 
-        <!--LINK PROS ICONES DE REDES SOCIAIS-->
-        <link rel="stylesheet"
-       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+          <!--BOOTSTRAP CND-->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+           <!--LINK PRA FONTE DE LETRA-->
+           <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
 
 
-        <!--CORPO DO HTML-->
-        <style>
-        body {
-          font: 400 15px PT Mono;
-          line-height: 1.8;
-          color: #620f0f;
-        }
+          <!--LINK PROS ICONES DE REDES SOCIAIS-->
+          <link rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-        /*modifica escrita em todo h4*/
-        h2 {
-          font-size: 24px;
-          text-transform: uppercase;
-          color: #303030;
-          font-weight: 600;
-          margin-bottom: 30px;
-        }
 
-        /*modifica escrita em todo h4*/
-        h4 {
-          font-size: 19px;
-          line-height: 1.375em;
-          color: #303030;
-          font-weight: 400;
-          margin-bottom: 30px;
-        }
+          <!--CORPO DO HTML-->
+          <style>
+          body {
+            font: 400 15px PT Mono;
+            line-height: 1.8;
+            color: #620f0f;
+          }
 
-        /*centraliza imagem*/
-        .bgimg {
-        background-position: center;
-        background-size: cover;
-        min-height: 75%;
-        }
+          /*modifica escrita em todo h4*/
+          h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+          }
 
-        /*tamanho*/
-       .img-fluid{
-        max-width: 100%;
-        height: auto;
-        }
+          /*modifica escrita em todo h4*/
+          h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+          }
 
-         /*capa do inicio dda pagina*/
-        .header {
-          padding: 300px 25px;
+          /*centraliza imagem*/
+          .bgimg {
           background-position: center;
           background-size: cover;
-          background-image: url("https://i.imgur.com/dYkdACQ.png");
           min-height: 75%;
-        }
+          }
 
-        /*o tamanho das caixas/conteiners no site*/
-        .container-fluid {
-          padding: 40px 50px;
-        }
+          /*tamanho*/
+         .img-fluid{
+          max-width: 100%;
+          height: auto;
+          }
 
-        /*fundo cinza do site*/
-        .bg-grey {
-          background-color: #f6f6f6;
-        }
+           /*capa do inicio dda pagina*/
+          .header {
+            padding: 300px 25px;
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://i.imgur.com/dYkdACQ.png");
+            min-height: 75%;
+          }
 
-        /*estiliza os icons do serviços */
-        .logo-small {
-          color: #620f0f;
-          font-size: 50px;
-        }
+          /*o tamanho das caixas/conteiners no site*/
+          .container-fluid {
+            padding: 40px 50px;
+          }
 
-        /*estiliza o icon do origem dessa doçura */
-        .logo {
-          color: #620f0f;
-          font-size: 200px;
-        }
+          /*fundo cinza do site*/
+          .bg-grey {
+            background-color: #f6f6f6;
+          }
 
-        /*faz as fotos do estrelas da loja ficarem dentro das margens*/
-        .thumbnail {
-          padding: 0 0 10px 0 ;
-        }
+          /*estiliza os icons do serviços */
+          .logo-small {
+            color: #620f0f;
+            font-size: 50px;
+          }
 
-        /*estiliza os tres comentarios de clientes famosos.*/
-        .item h4 {
-          font-size: 19px;
-          font-weight: 400;
-          font-style: italic;
-          margin: 10px 0;
-          color: #620f0f;
-        }
-        p:hover, h2:hover, h4:hover {
-        background-color: #FFFACD;
-        }
+          /*estiliza o icon do origem dessa doçura */
+          .logo {
+            color: #620f0f;
+            font-size: 200px;
+          }
 
-        /*estiliza a barra de navegação*/
-        .navbar {
-          margin-bottom: 0;
+          /*faz as fotos do estrelas da loja ficarem dentro das margens*/
+          .thumbnail {
+            padding: 0 0 10px 0 ;
+          }
+
+          /*estiliza os tres comentarios de clientes famosos.*/
+          .item h4 {
+            font-size: 19px;
+            font-weight: 400;
+            font-style: italic;
+            margin: 10px 0;
+            color: #620f0f;
+          }
+          p:hover, h2:hover, h4:hover {
+          background-color: #FFFACD;
+          }
+
+          /*estiliza a barra de navegação*/
+          .navbar {
+            margin-bottom: 0;
+            background-color: #620f0f;
+            border: 0;
+            font-size: 12px ;
+            line-height: 1.5 ;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: sans-serif;
+          }
+
+          /*estiliza a barra de navegação*/
+          .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+          }
+
+          /*estiliza a barra de navegação*/
+          .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #620f0f !important;
+            background-color: #fff !important;
+          }
+
+          /*estiliza a barra de navegação*/
+          .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+          }
+
+          /*setinha no rodape que volta pro começo*/
+          footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+          }
+
+          /*estiliza o rodape*/
+          footer{
           background-color: #620f0f;
-          border: 0;
-          font-size: 12px ;
-          line-height: 1.5 ;
-          letter-spacing: 4px;
-          border-radius: 0;
-          font-family: sans-serif;
-        }
-
-        /*estiliza a barra de navegação*/
-        .navbar li a, .navbar .navbar-brand {
-          color: #fff !important;
-        }
-
-        /*estiliza a barra de navegação*/
-        .navbar-nav li a:hover, .navbar-nav li.active a {
-          color: #620f0f !important;
-          background-color: #fff !important;
-        }
-
-        /*estiliza a barra de navegação*/
-        .navbar-default .navbar-toggle {
-          border-color: transparent;
-          color: #fff !important;
-        }
-
-        /*setinha no rodape que volta pro começo*/
-        footer .glyphicon {
-          font-size: 20px;
-          margin-bottom: 20px;
           color: #fff;
+          padding: 32px;
+          }
+
+           /*estiliza os botoes*/
+          .button {
+          background-color: #fcd85e;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition: 0.3s;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
         }
 
-        /*estiliza o rodape*/
-        footer{
-        background-color: #620f0f;
-        color: #fff;
-        padding: 32px;
-        }
+          </style>
+        </head>
 
-         /*estiliza os botoes*/
-        .button {
-        background-color: #fcd85e;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition: 0.3s;
-        display: inline-block;
-        text-decoration: none;
-        cursor: pointer;
-      }
+        <!--BARRA DE NAVEGACAO-->
+        <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-        </style>
-      </head>
-
-      <!--BARRA DE NAVEGACAO-->
-      <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#myPage">Sweet Babe</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#sobre">SOBRE</a></li>
-              <li><a href="#servicos">SERVIÇOS</a></li>
-              <li><a href="#destaques">HIGHLIGHTS</a></li>
-              <li><a href="#contato">FALE CONOSCO</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-      <!--COMO SÓ COLOQUEI UMA IMAGEM NÃO PRECISOU ESCREVER NADA, APENAS CHAMAR
-      (se tivesse texto era só colocar em h ou p e colocar text-center junto com o header pro texto ficar centralizado)-->
-      <div class="header ">
-        </div>
-
-
-      <!-- Container (SOBRE) -->
-      <div id="sobre" class="container-fluid text-center">
-        <div class="row">
-          <div class="text-center">
-            <h2>SOBRE A DOCERIA</h2><br>
-            <h4>Sweet Babe é uma doceria que tem como principal caracterÍstica misturar gostos brasileiros com uma pitada diferenciada, mesclando diferentes sabores em um único doce, que irá te surpreender com explosões de doçuras no paladar.</h4><br>
-            <p>Nossa loja funciona através de encomendas por meio do site, onde poderá ser especificado os tipos doces desejados atravez do menu que será lhe enviado, quantidades, dia de entrega e até mesmo agendar o "Taste Test" caso seja uma ocasião especial. Lembrando que a encomenda deve ser feita com no mínimo de 2 semanas de antecedência da entrega, para que possa ser encaixada em nosso cronograma. Quanto antes agendar, melhor e mais organizado será nossa preparação. Não perca tempo!</p>
-            <br><a href="https://www.youtube.com/watch?v=kJgy-W6g-jg"target="_blank"><button class="button btn btn-default btn-lg">FAÇA SUA ENCOMENDA!</button></a>
-          </div>
-           </div>
-           </div>
-
-      <div class="container-fluid bg-grey">
-          <div class="bgimg text-center">
-            <img src="https://img.icons8.com/windows/420/easter-cake.png" class="img-fluid" alt="responsive image">
-          </div>
-          <div class="text-center">
-            <h2>Origem dessa doçura</h2><br>
-            <h4><strong>COMO SURGIU A LOJA:</strong> Sweet Babe teve início com nossa fundadora BRUNA A. VIEIRA que começou a vender palha italiana em sua faculdade. Por causa do tamanho sucesso que o doce fez, ela começou a receber várias encomendas. Com o passar do tempo a demanda aumentou e ela passou a experimentar diferentes receitas, diferentes doces, até construir seu próprio negócio concreto.</h4><br>
-            <p><strong>DOCES:</strong> Nosso coringa para ter doces irresistíveis é sempre inovar a receita, por isso trabalhamos com doces que, apesar de normalmente serem simples, com nossa visão diferenciada conseguimos trazer novos sabores sem sair do conforto de um doce brasileiro.</p>
-          </div>
-        </div>
-
-
-      <!-- Container (SERVICOS) -->
-      <div id="servicos" class="container-fluid text-center">
-        <h2>Serviços</h2>
-        <h4>O que Proporcionamos</h4>
-        <br>
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-check logo-small"></span>
-            <h4>QUALIDADE</h4>
-            <p>Podemos garantir que o produto é produzido da melhor forma com ingredientes de qualidade.</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>AMOR</h4>
-            <p>Acreditamos muito no ditado que diz, "Trabalhe com oque ama e não precisará trabalhar um dia sequer", e isso faz grande diferença no nosso produto final.</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-phone logo-small"></span>
-            <h4>FACILIDADE</h4>
-            <p>Através desta plataforma online é possível fazer encomendas facilmente sem ter qualquer preocupação.</p>
-          </div>
-        </div>
-        <br><br>
-
-
-      <!-- Container (HIGHLIGHTS) -->
-      <div id="destaques" class="container-fluid text-center bg-grey">
-        <h2>Highlights</h2><br>
-        <h4>ESTRELAS DA LOJA</h4>
-        <div class="row text-center ">
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxMpB53rlrPmdZV0pLMo5_LDA2iVv5c1O-wUCQUhtEs1a8sy8V" alt="PALHA ITA" width="400" height="300">
-              <p><strong>Palha Italiana</strong></p>
-              <p>Com certeza o maior sucesso da loja, com sua incrível maciez e sabor marcante de cacau coberto por leite em pó.</p>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#myPage">Sweet Babe</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#destaques">HIGHLIGHTS</a></li>
+                <li><a href="#contato">FALE CONOSCO</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="https://www.daninoce.com.br/wp-content/uploads/2017/09/xnaked-cake-coco-e-creme-de-framboesa-9.jpg.pagespeed.ic.on0_bKIJYM.jpg" alt="cake Naked " width="400" height="300">
-              <p><strong>Naked Cake</strong></p>
-              <p>Dos bolos decorados, o naked cake de frutas vermelhas é o favorito, tanto por sua beleza quanto pelo seu sabor estonteante.</p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDS6sacGErNb1lzs4n3G_rH1cQm7Gz09zZjLMT1x_3oV0v6cSF" alt="bolo coco" width="400" height="300">
-              <p><strong>Toalha Felpuda</strong></p>
-              <p>A simplicidade e umidade desse bolo faz com que seja o queridinho de todos, com sua doçura no ponto certo.</p>
-            </div>
-          </div>
-        </div><br>
-         </div>
+        </nav>
 
-             <!--VERIDITOS DE CLIENTES-->
-           <h2>O QUE NOSSOS CLIENTES ACHAM</h2>
-           <div class="item">
-             <h4>"Impossível comer um doce de lá e não ter um sorriso no rosto."<br><span>Beyoncé</span></h4>
-           </div>
-           <div class="item">
-              <h4>"Perdi a conta de quantas palhas comi dessa loja, acho que vou ter que perdir mais mil vezes e começar a contar."<br><span>Oprah</span></h4>
+
+        <!--COMO SÓ COLOQUEI UMA IMAGEM NÃO PRECISOU ESCREVER NADA, APENAS CHAMAR
+        (se tivesse texto era só colocar em h ou p e colocar text-center junto com o header pro texto ficar centralizado)-->
+        <div class="header ">
+          </div>
+
+
+        <!-- Container (SOBRE) -->
+        <div id="sobre" class="container-fluid text-center">
+          <div class="row">
+            <div class="text-center">
+              <h2>SOBRE A DOCERIA</h2><br>
+              <h4>Sweet Babe é uma doceria que tem como principal caracterÍstica misturar gostos brasileiros com uma pitada diferenciada, mesclando diferentes sabores em um único doce, que irá te surpreender com explosões de doçuras no paladar.</h4><br>
+              <p>Nossa loja funciona através de encomendas por meio do site, onde poderá ser especificado os tipos doces desejados atravez do menu que será lhe enviado, quantidades, dia de entrega e até mesmo agendar o "Taste Test" caso seja uma ocasião especial. Lembrando que a encomenda deve ser feita com no mínimo de 2 semanas de antecedência da entrega, para que possa ser encaixada em nosso cronograma. Quanto antes agendar, melhor e mais organizado será nossa preparação. Não perca tempo!</p>
+              <br><a href="https://www.youtube.com/watch?v=kJgy-W6g-jg"target="_blank"><button class="button btn btn-default btn-lg">FAÇA SUA ENCOMENDA!</button></a>
             </div>
-            <div class="item">
-              <h4>"Se eu pudesse morar na casa de quem faz esses doces eu estaria no céu. Sensacional."<br><span>Kim Jongin, singer/dancer from EXO</span></h4>
+             </div>
+             </div>
+
+        <div class="container-fluid bg-grey">
+            <div class="bgimg text-center">
+              <img src="https://img.icons8.com/windows/420/easter-cake.png" class="img-fluid" alt="responsive image">
+            </div>
+            <div class="text-center">
+              <h2>Origem dessa doçura</h2><br>
+              <h4><strong>COMO SURGIU A LOJA:</strong> Sweet Babe teve início com nossa fundadora BRUNA A. VIEIRA que começou a vender palha italiana em sua faculdade. Por causa do tamanho sucesso que o doce fez, ela começou a receber várias encomendas. Com o passar do tempo a demanda aumentou e ela passou a experimentar diferentes receitas, diferentes doces, até construir seu próprio negócio concreto.</h4><br>
+              <p><strong>DOCES:</strong> Nosso coringa para ter doces irresistíveis é sempre inovar a receita, por isso trabalhamos com doces que, apesar de normalmente serem simples, com nossa visão diferenciada conseguimos trazer novos sabores sem sair do conforto de um doce brasileiro.</p>
             </div>
           </div>
 
 
-
-      <!-- Container (FALE CONOSCO) -->
-      <div id="contato" class="container-fluid bg-grey">
-        <h2 class="text-center">FALE CONOSCO</h2>
-        <div class="row">
-          <div class="col-sm-5">
-            <p>Fale conosco e retornaremos em dentro de 24 horas.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Espirito Santo, BR</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +27 123456789</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> sb_contato@sucesso.com</p>
+        <!-- Container (SERVICOS) -->
+        <div id="servicos" class="container-fluid text-center">
+          <h2>Serviços</h2>
+          <h4>O que Proporcionamos</h4>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-check logo-small"></span>
+              <h4>QUALIDADE</h4>
+              <p>Podemos garantir que o produto é produzido da melhor forma com ingredientes de qualidade.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-heart logo-small"></span>
+              <h4>AMOR</h4>
+              <p>Acreditamos muito no ditado que diz, "Trabalhe com oque ama e não precisará trabalhar um dia sequer", e isso faz grande diferença no nosso produto final.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-phone logo-small"></span>
+              <h4>FACILIDADE</h4>
+              <p>Através desta plataforma online é possível fazer encomendas facilmente sem ter qualquer preocupação.</p>
+            </div>
           </div>
-          <div class="col-sm-7 ">
-            <div class="row">
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
-              </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <br><br>
+
+
+        <!-- Container (HIGHLIGHTS) -->
+        <div id="destaques" class="container-fluid text-center bg-grey">
+          <h2>Highlights</h2><br>
+          <h4>ESTRELAS DA LOJA</h4>
+          <div class="row text-center ">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxMpB53rlrPmdZV0pLMo5_LDA2iVv5c1O-wUCQUhtEs1a8sy8V" alt="PALHA ITA" width="400" height="300">
+                <p><strong>Palha Italiana</strong></p>
+                <p>Com certeza o maior sucesso da loja, com sua incrível maciez e sabor marcante de cacau coberto por leite em pó.</p>
               </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
-            <div class="row">
-              <div class="col-sm-12 form-group">
-                <a href="https://www.youtube.com/watch?v=kJgy-W6g-jg"target="_blank"><button class="button btn btn-default pull-right" type="submit">Enviar</button></a>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="https://www.daninoce.com.br/wp-content/uploads/2017/09/xnaked-cake-coco-e-creme-de-framboesa-9.jpg.pagespeed.ic.on0_bKIJYM.jpg" alt="cake Naked " width="400" height="300">
+                <p><strong>Naked Cake</strong></p>
+                <p>Dos bolos decorados, o naked cake de frutas vermelhas é o favorito, tanto por sua beleza quanto pelo seu sabor estonteante.</p>
               </div>
             </div>
-          </div>
-        </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDS6sacGErNb1lzs4n3G_rH1cQm7Gz09zZjLMT1x_3oV0v6cSF" alt="bolo coco" width="400" height="300">
+                <p><strong>Toalha Felpuda</strong></p>
+                <p>A simplicidade e umidade desse bolo faz com que seja o queridinho de todos, com sua doçura no ponto certo.</p>
+              </div>
+            </div>
+          </div><br>
+           </div>
+
+               <!--VERIDITOS DE CLIENTES-->
+             <h2>O QUE NOSSOS CLIENTES ACHAM</h2>
+             <div class="item">
+               <h4>"Impossível comer um doce de lá e não ter um sorriso no rosto."<br><span>Beyoncé</span></h4>
+             </div>
+             <div class="item">
+                <h4>"Perdi a conta de quantas palhas comi dessa loja, acho que vou ter que perdir mais mil vezes e começar a contar."<br><span>Oprah</span></h4>
+              </div>
+              <div class="item">
+                <h4>"Se eu pudesse morar na casa de quem faz esses doces eu estaria no céu. Sensacional."<br><span>Kim Jongin, singer/dancer from EXO</span></h4>
+              </div>
+            </div>
+
+
+
+        <!-- Container (FALE CONOSCO) -->
+        <div id="contato" class="container-fluid bg-grey">
+          <h2 class="text-center">FALE CONOSCO</h2>
+          <div class="row">
+      <div class="col-sm-4">
+      <a href="https://www.daninoce.com.br/"target="_blank"><img src="https://img.icons8.com/ios/420/halloween-candy-filled.png" class="img-fluid" alt="responsive image"></a>
       </div>
+          <div class="row">
+            <div class="col-sm-7">
+              <p>obs: Clique na imagem ao lado para descobrir um site incrível de receitas.</p>
+              <p>Fale conosco e retornaremos em dentro de 24 horas.</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span> Espirito Santo, BR</p>
+              <p><span class="glyphicon glyphicon-phone"></span> +27 123456789</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> sb_contato@sucesso.com</p>
+            </div>
+            <div class="col-sm-7">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <a href="https://www.youtube.com/watch?v=kJgy-W6g-jg"target="_blank"><button class="button btn btn-default pull-right" type="submit">Enviar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-      <!--RODAPE-->
-      <footer class="container-fluid text-center ">
-        <!--volta pro inicio-->
-        <a href="#myPage" title="To Top">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <br>
-        <!--links e icons redes sociais-->
-          <a href="https://www.facebook.com/" target="_blank"><i class="glyphicon fab fa-facebook-square" ></i></a>
-          <a href="https://twitter.com/"target="_blank"><i class="glyphicon fab fa-twitter-square"></i></a>
-          <a href="https://www.instagram.com/?hl=pt-br"target="_blank"><i class="glyphicon fab fa-instagram"></i></a>
-          <a href="https://br.pinterest.com/"target="_blank"><i class="glyphicon fab fa-pinterest"></i></a>
+        <!--RODAPE-->
+        <footer class="container-fluid text-center ">
+          <!--volta pro inicio-->
+          <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+          <br>
+          <!--links e icons redes sociais-->
+            <a href="https://www.facebook.com/" target="_blank"><i class="glyphicon fab fa-facebook-square" ></i></a>
+            <a href="https://twitter.com/"target="_blank"><i class="glyphicon fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/?hl=pt-br"target="_blank"><i class="glyphicon fab fa-instagram"></i></a>
+            <a href="https://br.pinterest.com/"target="_blank"><i class="glyphicon fab fa-pinterest"></i></a>
 
-        <p>Site totalmente ilustrativo by Bruna</p>
-      </footer>
+          <p>Site totalmente ilustrativo by Bruna</p>
+        </footer>
